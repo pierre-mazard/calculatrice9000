@@ -76,6 +76,13 @@ Saisir la valeur du second nombre :
                
                """)
     if operateur == "/":
+        while b == 0:
+            print("""
+                  ! Erreur ! ==> Division par 0 !
+                   """)
+            b = nombre_valide("""
+Saisir la valeur du second nombre : 
+    => : """) 
         result = a / b
         print (f"""
                        ==> Le rapport de {a} par {b} est égal à {result}
